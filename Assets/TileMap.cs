@@ -9,9 +9,12 @@ public class TileMap : MonoBehaviour
     public Tilemap MyTileMap;
     public Camera myCam;
     public TileBase testTilebase;
+    public char[,] multideimensionalMap;
 
     void Start()
     {
+        multideimensionalMap = new char[26, 10];
+
         myCam = Camera.main;
         TryGetComponent<Tilemap>(out MyTileMap);
 
