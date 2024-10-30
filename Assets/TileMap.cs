@@ -23,12 +23,11 @@ public class TileMap : MonoBehaviour
                 // X = 0, Y = 99
                 Debug.Log($"X {x} Y {y}");
             }
-            // ...loop again
+            MyTileMap.SetTile(new Vector3Int(-6, -4, 0), null);
         }
-
-
-        MyTileMap.SetTile(new Vector3Int(-6, -4, 0), null);
+        // ...loop again
     }
+
     public void OnGUI()
     {
         Vector3 mouseWorldPosition = myCam.ScreenToWorldPoint(Input.mousePosition);
